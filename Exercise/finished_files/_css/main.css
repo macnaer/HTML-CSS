@@ -1,0 +1,477 @@
+@charset "UTF-8";
+
+/*color guide:
+#e1d8b9 sand
+#cb7d20 orange
+#952 accent orange (dark)
+#3c6b92 main blue
+#2c566a teal
+#c3cebc light green
+#7f7f7f accent gray
+*/
+
+/*limited reset*/
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+a {
+	text-decoration: none;
+	color: #cb7d20;
+}
+a:hover {
+	color: #952;
+}
+
+/*html5 display rule*/
+address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
+	display: block;
+}
+html {
+	background: #ddd;
+}
+body {
+	font: 100% Georgia, "Times New Roman", Times, serif;
+	width: 1100px;
+	margin: 0 auto;
+	padding: 0 50px;
+	text-align:left;
+	position: relative;
+	background: white;
+}
+
+nav ul, ul.menu {
+	list-style: none;
+}
+
+/* layout styles */
+header#mainHeader {
+	height: 185px;
+}
+main {
+	float: left;
+	width: 600px;
+	padding: 0 10px 0 25px;
+	margin-bottom: 2em;
+}
+section#riderReviews, section#reviews {
+	float: right;
+	clear: right;
+	width: 450px;
+	margin-bottom: 0;
+}
+aside#adCopy {
+	float: right;
+	clear: right;
+	width: 450px;
+	margin-bottom: 1em;
+}
+footer#pageFooter {
+	clear: both;
+	overflow: auto;
+}
+
+.floatRight {
+	float: right;
+}
+.floatLeft {
+	float: left;
+}
+.imgRight {
+	float: right;
+	margin-left: 1em;
+	margin-bottom: 1 em;
+}
+
+/*-------------presentation styles---------------*/
+
+.pubdate {
+	text-align:right;
+	color: #666;
+	font-size: .9em;
+	font-style: italic;
+}
+
+/*header styles*/
+header#mainHeader {
+	background: url(../_images/tracks-logo.gif) no-repeat;
+	padding: 75px 0 0 245px;
+	position: relative;
+	border-bottom: 2px solid #7f7f7f;
+	margin-bottom: 1em;
+}
+header#mainHeader h1 span {
+	position: absolute;
+	left: -2000em;
+}
+header#mainHeader nav {
+	position: absolute;
+	left: 225px;
+	top: 0;
+	padding-top: 15px;
+}
+header#mainHeader ul {
+	float: left;
+}
+header#mainHeader ul li {
+	float: left;
+}
+header#mainHeader ul li a{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	color: #000;
+	padding: 0 20px;
+	border-right: 1px solid #000;
+	text-decoration: none;
+}
+header#mainHeader ul li a:last-child{
+	border: none;
+}
+header#mainHeader ul li a.current {
+	color: #cb7d20;
+}
+header#mainHeader ul li a:hover {
+	color: #cb7d20;
+}
+header#mainHeader h1 {
+	font-size: 6em;
+	color: #7f7f7f;
+	font-weight: normal;
+}
+header#mainHeader p {
+	font-weight: normal;
+	font-size: 2em;
+}
+
+/*trail info section styles*/
+main {
+	border-right: 1px solid #7f7f7f;
+}
+p.breadcrumbs {
+	font-size: .9em;
+	color: #cb7d20;
+}
+main header a {
+	color: #cb7d20;
+}
+main header a:hover {
+	color:#952
+}
+main header h2 {
+	font-weight: normal;
+	font-size: 1.8em;
+	margin-top: .5em;
+}
+main article h3 {
+	font-weight: normal;
+	color: #7f7f7f;
+	font-size: 3em;
+	margin-bottom: .2em;
+}
+main article h3.submit {
+	font-size: 2em;
+	margin: 1em 0 .2em;
+}
+main caption {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.4em;
+	text-align: left;
+}
+
+main table#quickFacts {
+	width: 425px;
+	background: #c3cebc;
+	border: none;
+	margin: .5em 0 1em;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+main table#quickFacts th {
+	width: 100px;
+}
+main table#quickFacts th, main table#quickFacts td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .8em;
+	padding-left: 1em;
+	text-align: left;
+	line-height: 3;
+	margin:0;
+}
+main table#quickFacts tr:nth-child(odd)  {
+	background: #e1d8b9;
+}
+main p, main address {
+	color: #666;
+	line-height: 1.6;
+	margin-bottom: 1em;
+}
+main p.summary {
+	font-size: 1.2em;
+	font-style: italic;
+}
+main img{
+	display: block;
+}
+main figcaption {
+	text-transform: uppercase;
+	color: #4d4d4d;
+	font-size: 1.2em;
+}
+main blockquote {
+	background: #ddd;
+	color: #4d4d4d;
+	font-size: 1.3em;
+	line-height: 1.6;
+	margin-bottom: 1em;
+	padding: .5em .5em 0;
+}
+main blockquote footer{
+	background: #4d4d4d;
+	color: #fff;
+	text-align: right;
+	padding: .5em;
+	line-height: 1;
+	margin: .5em -.5em 0;
+	font-size: .9em;
+}
+main .author {
+	font-style: normal;
+}
+main h4 {
+	font-size: 1em;
+	margin-top: 1.2em;
+	margin-bottom: 0;
+	color: #000;
+}
+main .currentTrail {
+	margin-top: 2em;
+	font-size: 1.2em;
+	margin-bottom: 0;
+	color: #000;
+	font-weight: bold;
+}
+main footer.articleFooter {
+	background: #e1d8b9;
+	padding: .5em;
+	margin-bottom: 2em;
+}
+main footer.articleFooter p {
+	margin:0 0 .5em;
+}
+main footer.articleFooter p:first-child {
+	font-weight: bold;
+	font-style: italic;
+}
+main article.comment {
+	background: #ccc;
+	padding: 0 .5em .1em;
+}
+main time.pubdate {
+	text-align: left;
+	margin-bottom: 1em;
+}
+main article section h3 {
+	font-size: 2em;
+	margin: 0;
+}
+main article.comment h4 {
+	background: #4d4d4d;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #fff;
+	padding: .5em;
+	margin: 0 -.5em .5em;
+	font-weight: normal;
+}
+main article.comment h4 span {
+	font-size: 1.4em;
+	font-weight: bold;
+}
+main dt {
+	font-weight: bold;
+	text-transform: uppercase;
+	color:#4d4d4d;
+	margin: 3em 0 1em;
+}
+main dd {
+	width: 250px;
+	background: #e1d8b9;
+	margin-bottom: 1em;
+	padding: .3em;
+}
+main a {
+	color: #000;
+}
+main a:hover {
+	color: #952;
+}
+/* blog entry styles */
+.recipe h4 {
+	font-size: 1.6em;
+	font-weight: normal;
+	margin-bottom: 1em;
+	color: #2c566a;
+}
+.recipe h4.ingredients, .recipe h4.directions {
+	margin-bottom: 0.2em;
+}
+.recipe h4 time, .recipe h4 span{
+	color: #7f7f7f;
+	font-style: italic;
+}
+.recipe ul, .recipe ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.recipe li {
+	font-size: 1.2em;
+	color: #7f7f7f;
+	margin-bottom: .5em;
+}
+/*trail news, reviews, and aside styles*/
+section#riderReviews {
+	font-size: 90%;
+}
+section#riderReviews h2, section#reviews h2{
+	font-size: 2.6em;
+	font-weight: normal;
+	color: #7f7f7f;
+	margin-bottom: .5em;
+}
+section#reviews .review-summary {
+	color: #3c6b92;
+	margin-bottom: 1em;
+	font-size: 1.2em;
+}
+section#reviews h3 {
+	font-size: 2em;
+	font-weight: normal;
+	color: #7f7f7f;
+	margin-bottom: 0;
+}
+section#riderReviews article {
+	background: #e1d8b9;
+	padding: 1em 1em;
+	margin-bottom: 1.5em;
+}
+section#riderReviews article h3 {
+	font-size: 1.6em;
+	margin-bottom: .2em;
+	color: #000;
+	font-weight:bold;
+}
+section#riderReviews .byline {
+	font-size: 1.4em;
+	color: #666;
+	font-weight: normal;
+	line-height: 1.2;
+	margin-bottom: .2em;
+}
+section#riderReviews article p, section#riderReviews aside p, aside#adCopy p {
+	line-height: 1.8;
+	color: #333;
+	margin-bottom:1em;
+}
+section#riderReviews .pubdate {
+	color: #666;
+}
+
+section#riderReviews aside, #reviews article {
+	background: #e1d8b9;
+	padding: 0 20px 20px;
+	margin-bottom: 1.5em;
+}
+section#riderReviews aside h3 {
+	font-size: 1.6em;
+	color: #000;
+	background: #c3cebc;
+	margin: 0 -20px .5em;
+	padding: .5em;
+	font-weight: normal;
+}
+section#reviews article h3 {
+	font-size: 1em;
+	color: #000;
+	background: #c3cebc;
+	margin: 0 -20px .5em;
+	padding: .5em;
+	font-weight: normal;
+}
+section#reviews article h3 span {
+	font-size: 1.4em;
+}
+section#reviews article p {
+	line-height: 1.4;
+	color: #333;
+	margin-bottom:.5em;
+}
+section#reviews article p.item-reviewed {
+	font-style: italic;
+}
+section#reviews article p.rating {
+	font-weight: bold;
+}
+aside#adCopy {
+	background: #c3cebc;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: .8em;
+	padding-bottom: 1em;
+}
+aside#adCopy h3 {
+	font-size: 1.4em;
+	margin-bottom: .2em;
+	color: #4d4d4d;
+	font-weight:bold;
+	padding: 0.5em;
+}
+aside#adCopy img {
+	display: block;
+	margin: .5em auto;
+}
+aside#adCopy a{
+	font-size: 1.2em;
+	color: #952;
+	font-weight: bold;
+}
+aside#adCopy a:hover {
+	color: #3c6b92;
+	text-decoration:underline;
+}
+aside#adCopy p{
+	margin-bottom: 0;
+	padding: 0 1em;
+}
+/*footer styles*/
+footer#pageFooter {
+	border-top: 2px solid #7f7f7f;
+	padding: 2em;
+}
+footer#pageFooter div.leftCol {
+	float: left;
+	width: 600px;
+}
+footer#pageFooter div.rightCol {
+	float: right;
+	width: 420px;
+	text-align: right;
+}
+footer#pageFooter div.rightCol a {
+	color: #666;
+}
+footer#pageFooter div.rightCol a:hover {
+	color: #952;
+}
+footer#pageFooter p {
+	margin-bottom: 1em;
+	color: #666;
+}
+footer#pageFooter p.topLink {
+	background: url(../_images/up.gif) no-repeat right center;
+	padding-right: 20px;
+}
+footer#pageFooter small {
+	font-style: italic;
+}
