@@ -22,3 +22,13 @@ https://github.com/w3c/csswg-drafts
 
 ##### HTML  Tags
 https://html.spec.whatwg.org/multipage/dom.html#content-models
+
+
+### 
+https://caniuse.com/
+
+##### Блочні тегі
+https://developer.mozilla.org/ru/docs/Web/HTML/Block-level_elements
+
+##### Інлійнові
+https://developer.mozilla.org/ru/docs/Web/HTML/%D0%A1%D1%82%D1%80%D0%BE%D1%87%D0%BD%D1%8B%D0%B5_%D0%AD%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B
