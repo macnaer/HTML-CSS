@@ -1,0 +1,63 @@
+body{
+    --main-bg-color: brown;
+    --main-font-color: rgb(55, 202, 26);
+}
+
+header h1{
+    /*color: blueviolet !important;  Імпортенти це біда!*/
+    /* color: blueviolet; */
+    /* color: rgb(177, 20, 20); */
+    color: var(--main-font-color);
+}
+p{
+    /* font-size: 18px;
+    font-size: 1em; */
+    font-size: 1.4rem;
+    /* font-weight: 900; */
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+span{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    color: bisque;
+}
+
+#root{
+    background-color: darkgray;
+}
+
+.color1{
+    color: #12ca12
+}
+.color2{
+    color: yellow;
+}
+.color3{
+    color: darkgoldenrod;
+}
+
+.list{
+    list-style: none;
+}
+
+.external{
+    width: 300px;
+    height: 200px;
+    background-color: #abc123;
+    display: inline-block;
+}
+
+.internal{
+    width: 150px;
+    height: 100px;
+    background-color: chocolate;
+    /* margin-left: 10px;
+    margin-top: 10px; */
+    /* margin: 9px 16px 37px 64px; */
+    margin: 46px auto;
+
+}
