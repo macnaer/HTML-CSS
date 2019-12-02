@@ -1,0 +1,52 @@
+body{
+    min-width: 540px;
+}
+.color1{
+    background-color: rgb(181, 211, 11);
+    height: 150px;
+}
+
+.color2{
+    background-color: var(--indigo);
+    /* background-color: rgb(206, 14, 158); */
+    height: 150px;
+}
+
+.color3{
+    background-color: rgb(84, 23, 197);
+    height: 150px;
+}
+
+
+.color4{
+    background-color: rgb(17, 196, 228);
+    height: 150px;
+}
+
+.color5{
+    background-color: rgb(145, 8, 26);
+    height: 150px;
+}
+.pictire{
+    width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 1800px) { 
+    .test{
+        background-color: red;
+    }
+}
+
+@media (max-width: 1200px) { 
+    .test{
+        background-color: yellow;
+    }
+}
+
+@media (max-width: 992px) { 
+    .test{
+        background-color: goldenrod;
+    }
+}

@@ -1,0 +1,27 @@
+.image{
+    height: 300px;
+    background-image: url("../img/Element3_dark.svg");
+    background-repeat: no-repeat;
+    background-size: 122px;
+    background-position: center 79px;
+    background-color: antiquewhite;
+}
+.image2{
+    height: 300px;
+    background-color: bisque;
+}
+.image2 img{
+
+    width: 122px;
+    height: auto;
+}
+.image3{
+    height: 300px;
+    background-color: darkgrey;
+}
+
+.img--svg{
+    width: 122px;
+    height: auto;
+    display: inline-block;
+}
