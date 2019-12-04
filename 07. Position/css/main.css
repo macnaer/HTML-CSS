@@ -1,0 +1,51 @@
+.wrapper {
+  background-color: cadetblue;
+  position: relative;
+  z-index: 0;
+}
+.block1 {
+  background-color: chartreuse;
+  display: inline-block;
+  width: 84px;
+  height: 84px;
+  left: 87px;
+  position: relative;
+  transform: rotate(43deg);
+  top: 3px;
+  z-index: -1;
+}
+
+.block2 {
+  background-color: coral;
+  display: inline-block;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+}
+
+.block3 {
+  background-color: crimson;
+  display: inline-block;
+  width: 84px;
+  height: 84px;
+  position: relative;
+  left: 3%;
+  border-top-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+  transform: rotate(-45deg);
+}
+.block4 {
+  background-color: white;
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  position: relative;
+  border-radius: 50%;
+  bottom: 18px;
+  right: 16px;
+  /* border: 4px solid yellow; */
+  border-top: 4px solid green;
+  border-right: 4px solid yellow;
+  border-bottom: 4px solid blue;
+  border-left: 4px solid pink;
+}
